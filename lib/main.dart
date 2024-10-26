@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(EventiaApp());
@@ -11,22 +12,9 @@ class EventiaApp extends StatelessWidget {
       title: 'Eventia',
       theme: ThemeData(
         primarySwatch: Colors.orange,
+        fontFamily: 'Poppins', // Usa la fuente que habíamos definido
       ),
       home: HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Eventia'),
-      ),
-      body: Center(
-        child: Text('Bienvenido a Eventia'),
-      ),
     );
   }
 }
